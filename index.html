@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> Calculadora </title>
+      <link type="text/css" href="styles.css" rel="stylesheet"> 
+    </head>
+    <body>
+      <table class='calculadora'>
+        <tr>
+          <td colspan="4"> <span id="result"> </span></td>
+        </tr>
+        <tr>
+          <td><button id="seven" onclick="addValue('7')"> 7 </button></td>
+          <td><button id="eight" onclick="addValue('8')"> 8 </button></td>
+          <td><button id="nine" onclick="addValue('9')"> 9 </button></td>
+          <td><button id="division" onclick="addValue('/')"> / </button></td>
+        </tr>
+        <tr>
+          <td><button id="four" onclick="addValue('4')"> 4 </button></td>
+          <td><button id="five" onclick="addValue('5')"> 5 </button></td>
+          <td><button id="six" onclick="addValue('6')"> 6 </button></td>
+          <td><button id="multiply" onclick="addValue('*')"> * </button></td>
+        </tr>
+        <tr>
+          <td><button id="one" onclick="addValue('1')"> 1 </button></td>
+          <td><button id="two" onclick="addValue('2')"> 2 </button></td>
+          <td><button id="three" onclick="addValue('3')"> 3 </button></td>
+          <td><button id="subtraction" onclick="addValue('-')"> - </button></td>
+        </tr>
+        <tr>
+          <td><button id="equal" onclick="calculate()"> = </button></td>
+          <td><button id="reset" onclick="reset()"> C </button></td>
+          <td><button id="zero" onclick="addValue('0')"> 0 </button></td>
+          <td><button id="sum" onclick="addValue('+')"> + </button></td>
+        </tr>
+      </table>
+      <script src="calculator.js"></script>
+    </body>
+</html>
